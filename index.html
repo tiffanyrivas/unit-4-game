@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "assets/css/style.css">
+</head>
+
+    <body>
+        <div class = "jumbotron">
+            <h1>Link's Rupee Game</h1>
+        </div>
+    
+        <div class = "container">
+            <h4>INSTRUCTIONS: </h4>
+                <p> <strong>Click on the button to generate a random number. You have four rupees to choose from that will add a specific amount of points to your total score.</strong></p>
+                <p><strong>You win the game by matching your total score to the random number, and you lose the game if your score goes above the generated number.</strong></p>
+                <p><strong>The value of each rupee is hidden until you click on it. Each time you lose your total score will restart and you have to generate another random number.</strong></p>
+                <div class="card mt-1">
+                    <div class="card-header">
+                        <div class = "row">
+                            <div class="col-md-8">
+                                <!-- <p>Random Number: </p> -->
+                                <button id="random-button" class="btn btn-info">
+                                        <h5>Click me for a random number!</h5>
+                                 
+                                  </button>
+                        
+                        <!-- <h3 class="card-title">Computer Pick</h3> -->
+                        <h3 id="computer-pick">???</h3>
+                        </div>
+                        <div class="col-md-4">
+                                <p id = "wins">Wins:</p>
+                                <p id = "losses">Losses: </p>
+
+                        </div>
+                    </div>
+                        
+                      </div>
+                    </div>
+              
+                    <div class="card mt-1">
+                      <div class="card-header">
+                        <div class="card-body text-center">
+                          <h3 class="card-title">Choose your Rupee</h3>
+
+
+                          
+
+
+                          <button id="button-red" class="btn btn-info" value = "7">
+                              <img src = "assets/images/red.jpg" id = "red" width = "40" height = "50"/>
+                           
+                          </button>
+                          <button id="button-blue" class="btn btn-info" value = "2">
+                                <img src = "assets/images/blue.png" id = "blue" width = "40" height = "50"/>
+                           
+                          </button>
+                          <button id="button-yellow" class="btn btn-info" value = "14">
+                                <img src = "assets/images/yellow.jpeg" id = "yellow" width = "40" height = "50"/>
+                            
+                          </button>
+                          <button id="button-green" class="btn btn-info" value = "9">
+                                <img src = "assets/images/green.jpg" id = "green" width = "40" height = "50"/>
+                         
+                          </button>
+
+                          
+                        </div>
+                      </div>
+              
+                      <div class="card mt-1">
+                        <div class="card-header">
+                          <div class="card-body text-center">
+                            <h3 class="card-title">Rupee Value</h3>
+                            <h1 id="result"></h1>
+                          </div>
+                        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+        <script type="text/javascript" src = "assets/javascript/game.js"></script>
+
+        </body>
+    
+
+
+
+</html>
